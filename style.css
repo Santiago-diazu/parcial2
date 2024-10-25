@@ -1,0 +1,61 @@
+/* se utiliza para aplicar estilos a todo el contenido de la página web que se encuentra dentro de la etiqueta */
+body {
+    /* el font-family lo utilizamos para especificar la tipográfica que se aplicará al texto. Por meido de este atributo podemos definir qué tipo de fuente se utilizará en todo el contenido de la página web. */
+    font-family: sans-serif;
+    /* por medio del margin estamos creando un espacio alrededor de los elementos, separándolos entre estos. */
+    margin: 0;
+}
+
+/* el .contenedor nos está hablando de una clase, por lo que nos permite aplicar estilos a cualquier elemento HTML que tenga la clase contenedor. */
+.contenedor {
+    /* este nos permite controlar cómo se muestran los elementos en la página web, permitiéndonos definir el comportamiento de los elementos en el documento y su relación con otros elementos. */
+    display: flex;
+    /* el flex-wrap deja controlar la distribución de los elementos flexibles cuando no hay suficiente espacio en una sola línea, permitiendo que los elementos "se envuelvan" y se distribuyan en múltiples líneas o columnas según sea necesario. */
+    flex-wrap: wrap;
+    /* este nos está permitiendo alinear y distribuir el espacio entre los elementos a lo largo del eje principal. */
+    justify-content: space-around;
+    /* el padding nos permite agregarle margen de una forma interna. */
+    padding: 20px;
+}
+
+/* Nos permite aplicar estilos a cualquier elemento HTML que tenga la clase tarjeta. */
+.tarjeta {
+    /* nos deja definir el ancho del elemento.  */
+    width: 300px;
+    /* estamnos poniéndole margen externa a los elmentos de .tarjeta */
+    margin: 10px;
+    /* estamos creando bordes alrededor de los elementos html */
+    border: 1px solid #ccc;
+    /* estamos agregando margen de una forma interna. */
+    padding: 20px;
+    /* estamos generando esquinas redondeadas en los elementos. */
+    border-radius: 5px;
+    /* estamos generando sombras a los elementos, creando un efecto tridimensional. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta img */
+.tarjeta img {
+    /* definimos el ancho de las imagenes */
+    width: 100%;
+    /* establecemos un alto a las imagenes */
+    height: auto;
+    /* definimos cómo se debe renderizar los elementos en el documento HTML, afectando su comportamiento y su interacción con otros elementos de la página. */
+    display: block;
+    /* se están redondeando las esquinas de los imagenes. */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta h3 */
+.tarjeta h3 {
+    /* definimos el espacio exterior en la parte superior de los elementos h3 */
+    margin-top: 10px;
+}
+
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta p */
+.tarjeta p {
+    /* definimos el tamaño de la fuente del texto dentro de un elemento p */
+    font-size: 0.9em;
+    /* con este indicamos la altura de las lineas que están en el elmento p */
+    line-height: 1.5;
+}
